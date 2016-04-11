@@ -25,7 +25,13 @@ header {
   color: $primary-text;
   float: right;
   font-size: 12px;
-
+    span {
+      margin-right:5px;
+    }
+}
+.fa-plane {
+  color:$dark-green;
+  margin-right:5px;
 }
 
 .container {
