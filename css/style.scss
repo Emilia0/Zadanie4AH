@@ -97,6 +97,27 @@ main {
   margin-top: 72px;
   margin-bottom:79px;
 }
+.form div {
+  margin-right:82px;
+}
+
+[type=radio] {
+  display: none;
+}
+
+[type=radio] + label {
+  color: $secondary-text;
+  i {
+    color: $secondary-text;
+  }
+}
+
+[type=radio]:checked + label {
+  color:$primary-text;
+  i {
+    color:$dark-green;
+  }
+}
 
 footer  {
   height:60px;
@@ -140,5 +161,5 @@ nav * {
 }
 
 nav li:hover  {
-  color:$primary-text;
+  color:$dark-green;
 }
