@@ -25,7 +25,7 @@ header {
   color: $primary-text;
   float: right;
   font-size: 12px;
-  //font-weight: 600;
+
 }
 
 .container {
@@ -49,10 +49,12 @@ header {
   text-align: center;
   line-height: 43px;
   margin-top: 35px;
-  //font-weight: 600;
 }
-.main {
-  width:642px ;
+
+main {
+  width: 644px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .formInstruction {
@@ -61,23 +63,20 @@ header {
   color: $primary-text;
   h1 {
     font-size: 25px;
-    font-weight:500;
+    font-weight: 500;
 
   }
   p {
-    margin-top:26px;
-    margin-bottom:14px;
+    margin-top: 26px;
+    margin-bottom: 14px;
     font-size: 15px;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
-    width:644px ;
+    //width: 644px;
     text-align: justify;
-    text-justify:distribute;
+    text-align-last: justify;
     line-height: 1.4;
     padding: 0;
-
-
-
   }
   a {
     color: $dark-green;
@@ -86,6 +85,50 @@ header {
   }
 }
 
-//@media screen and (min-width: 751px)  {
-//
-//}
+.form {
+  border:$form-border solid 1px;
+  height:1167px;
+  margin-top: 72px;
+  margin-bottom:79px;
+}
+
+footer  {
+  height:60px;
+  border-top:$border-gray solid 1px;
+  font-size:11px;
+  color:$secondary-text;
+  .container {
+    line-height: 60px;
+  }
+}
+.language {
+  width:87px;
+  height: 32px;
+  border:$lang-box solid 1px;
+  border-radius: 1%;
+  float:left;
+  margin-top:14px;
+  margin-right:27px;
+  line-height: 32px;
+  cursor: pointer;
+  span {
+    margin-left: 5px;
+  }
+}
+.language:hover {
+  color: $primary-text;
+}
+
+.copyright  {
+  float:right;
+  vertical-align: middle;
+}
+nav * {
+  display: inline;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+nav li:hover  {
+  color:$primary-text;
+}
