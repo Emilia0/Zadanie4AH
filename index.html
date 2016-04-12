@@ -45,21 +45,20 @@
     <section class="form">
         <form action="">
 
-        <div class="instruction"><i class="fa fa-circle-thin"></i> <span>1</span>
-            <h3>Account type</h3></div>
+            <div class="instruction"><i class="fa fa-circle-thin"></i> <span>1</span>
+                <h3>Account type</h3></div>
 
-        <div class="accountType">
-            <input type="radio" id="personal" checked name="accountType" value="">
-            <label class="icon-" for="personal"><i class="fa fa-dot-circle-o"> </i> Personal account</label>
-            <input type="radio" id="business" name="accountType" value="">
-            <label class="icon-" for="business"> <i class="fa fa-dot-circle-o"> </i> Business account</label>
-        </div>
+            <div class="accountType">
+                <input type="radio" id="personal" checked name="accountType" value="">
+                <label class="icon-" for="personal"><i class="fa fa-dot-circle-o"> </i> Personal account</label>
+                <input type="radio" id="business" name="accountType" value="">
+                <label class="icon-" for="business"> <i class="fa fa-dot-circle-o"> </i> Business account</label>
+            </div>
 
-        <div class="instruction"><i class="fa fa-circle-thin"></i> <span>2</span>
-            <h3>Account owner information</h3></div>
+            <div class="instruction"><i class="fa fa-circle-thin"></i> <span>2</span>
+                <h3>Account owner information</h3></div>
 
-        <div class="accountOwner">
-
+            <div class="accountOwner">
                 <input type="text" placeholder="First name">
                 <input type="text" placeholder="Last name">
                 <input type="text" placeholder="Address">
@@ -67,22 +66,28 @@
                 <input type="text" placeholder="City">
                 <input type="text" placeholder="State (optional)">
                 <input type="text" placeholder="Zip code">
-                <select name="Country" id="">Country</select>
+                <select name="Country" id="Country">
+                    <option value="" disabled selected hidden>Country</option>
+                    <option value="USA">USA</option>
+                    <option value="PL">Polska</option>
+                </select>
+            </div>
 
-        </div>
+            <div class="instruction bank"><i class="fa fa-circle-thin"></i> <span>3</span>
+                <h3>Bank account information</h3></div>
 
-        <div class="instruction"><i class="fa fa-circle-thin"></i> <span>3</span>
-            <h3>Bank account information</h3></div>
+            <div class="bankAccount">
+                <select name="bankCountry" id="bankCountry">
+                    <option value="" disabled selected hidden >Country of your bank</option>
+                    <option value="USA">USA</option>
+                    <option value="PL">Polska</option>
+                </select>
+                <input type="text" placeholder="BIC / SWIFT code">
+                <input type="text" placeholder="IBAN (bank account number)">
+                <textarea name="" id=""  placeholder="Additional information (optional)"></textarea>
+            </div>
 
-        <div class="bankAccount">
-            <select name="" id="">Country of your bank</select>
-            <input type="text" placeholder="BIC / SWIFT code">
-            <input type="text" placeholder="IBAN (bank account number)">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Additional information (optional)"></textarea>
-
-        </div>
-
-        <button>Continue</button>
+            <input type="submit" value="Continue" class="button">
 
         </form>
     </section>

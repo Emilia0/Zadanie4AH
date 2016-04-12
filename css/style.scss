@@ -2,7 +2,6 @@
 
 body {
   width: 100%;
-  //font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -101,6 +100,7 @@ main {
 }
 .form form  {
   margin-left:82px;
+  //margin-right:60px;
 }
 
 [type=radio] {
@@ -120,6 +120,126 @@ main {
     color:$dark-green;
   }
 }
+
+.instruction {
+  color:$secondary-text;
+  margin-bottom: 30px;
+  margin-top:65px;
+    i {
+    font-size:30px;
+      position: relative;
+      top:3px;
+  }
+  span {
+    font-size:18px;
+    position: relative;
+    left:-21px;
+  }
+  h3 {
+    color: $primary-text;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+ input {
+  height: 53px;
+  line-height: 53px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding:0 0 0 16px;
+   border: $secondary-text solid 1px;
+   color:$primary-text;
+   font-size:14px;
+   font-family: 'Roboto', sans-serif;
+
+}
+
+.form input:focus {
+  border:$dark-green solid 1px;
+  outline:none;
+}
+
+.accountOwner input {
+  width:210px;
+}
+
+.accountOwner select {
+  @extend input;
+  width:226px;
+  padding-right:10px;
+
+  option {
+    color:$primary-text;
+  }
+}
+
+.bank  {
+  margin-top:12px;
+}
+.bankAccount input {
+  width:294px ;
+}
+
+.bankAccount select {
+  @extend input;
+  width:310px;
+}
+
+textarea  {
+  width: 456px;
+  height: 104px;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  padding-left:16px;
+  padding-top: 18px;
+}
+
+textarea:focus  {
+  border:$dark-green solid 1px;
+  outline:none;
+}
+
+.button {
+  width:136px;
+  height: 50px;
+  color: white;
+  background-color: $dark-green;
+  padding:0;
+  float:right;
+  margin-right:87px;
+  margin-top:60px;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer  {
   height:60px;
