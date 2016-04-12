@@ -78,7 +78,6 @@ main {
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
-    //width: 644px;
     text-align: justify;
     text-align-last: justify;
     line-height: 1.4;
@@ -96,9 +95,12 @@ main {
   height:1167px;
   margin-top: 72px;
   margin-bottom:79px;
+   h3 {
+     display:inline;
+   }
 }
-.form div {
-  margin-right:82px;
+.form form  {
+  margin-left:82px;
 }
 
 [type=radio] {
