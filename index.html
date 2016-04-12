@@ -26,7 +26,21 @@
 </header>
 <div class="container">
 
-    <section class="payoutSelection"></section>
+    <section class="payoutSelection">
+
+
+        <h4> <i class="fa fa-check" ></i></h4>
+        <h3>Choose payout method</h3>
+        <div class="arrowRight arrowBorder" id="firstArrowB"></div>
+        <div class="arrowRight arrowFill" id="firstArrowF"></div>
+        <h4 class="active">2</h4>
+        <h3 class="active">Set up payout method</h3>
+        <div class="arrowRight arrowBorder" id="secondArrowB"></div>
+        <div class="arrowRight arrowFill" id="secondArrowF"></div>
+        <h4>3</h4>
+        <h3>Review and confirm</h3>
+
+    </section>
 
     <section class="payoutMethod">
         <span>You selected Bank Transfer.</span>
@@ -45,17 +59,19 @@
     <section class="form">
         <form action="">
 
-            <div class="instruction"><i class="fa fa-circle-thin"></i> <span>1</span>
+            <div class="instruction">
+                <h4>1</h4>
                 <h3>Account type</h3></div>
 
             <div class="accountType">
-                <input type="radio" id="personal" checked name="accountType" value="">
-                <label class="icon-" for="personal"><i class="fa fa-dot-circle-o"> </i> Personal account</label>
-                <input type="radio" id="business" name="accountType" value="">
-                <label class="icon-" for="business"> <i class="fa fa-dot-circle-o"> </i> Business account</label>
+                <input type="radio" id="personalAccount" checked name="accountType" value="" class="accountChoice">
+                <label class="icon-" for="personalAccount"><i class="fa fa-dot-circle-o choice"> </i> Personal account</label>
+                <input type="radio" id="businessAccount" name="accountType" value="" class="accountChoice">
+                <label class="icon-" for="businessAccount"> <i class="fa fa-circle-o choice"> </i> Business account</label>
             </div>
 
-            <div class="instruction"><i class="fa fa-circle-thin"></i> <span>2</span>
+            <div class="instruction">
+                <h4>2</h4>
                 <h3>Account owner information</h3></div>
 
             <div class="accountOwner">
@@ -73,7 +89,8 @@
                 </select>
             </div>
 
-            <div class="instruction bank"><i class="fa fa-circle-thin"></i> <span>3</span>
+            <div class="instruction bank">
+                <h4>3</h4>
                 <h3>Bank account information</h3></div>
 
             <div class="bankAccount">
@@ -110,5 +127,6 @@
 
 </footer>
 <script type="text/javascript" src="lib/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

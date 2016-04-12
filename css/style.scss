@@ -24,13 +24,14 @@ header {
   color: $primary-text;
   float: right;
   font-size: 12px;
-    span {
-      margin-right:5px;
-    }
+  span {
+    margin-right: 5px;
+  }
 }
+
 .fa-plane {
-  color:$dark-green;
-  margin-right:5px;
+  color: $dark-green;
+  margin-right: 5px;
 }
 
 .container {
@@ -44,6 +45,70 @@ header {
   margin-top: 34px;
   box-sizing: border-box;
   border: $border-gray solid 1px;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  line-height: 60px;
+  color: $border-gray;
+  h4 {
+    border: $border-gray solid 2px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 20px;
+    margin-left:66px;
+  }
+  h3 {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left:13px;
+    margin-right:88px;
+  }
+  div {
+    display: inline-block;
+  }
+  h4[class="active"] {
+    color:$dark-green;
+    border-color:$dark-green;
+  }
+  h3[class="active"] {
+    color:$primary-text;
+  }
+}
+
+
+.arrowRight {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  border-left: 17px solid ;
+}
+
+.arrowBorder {
+  border-left-color: $border-gray;
+  z-index:50;
+}
+.arrowFill {
+  border-left-color: white;
+  z-index:100;
+}
+#firstArrowB {
+  left:326px;
+}
+#firstArrowF {
+  left:325px;
+}
+#secondArrowB {
+  left: 659px;
+}
+#secondArrowF {
+  left:658px;
 }
 
 .payoutMethod {
@@ -90,16 +155,17 @@ main {
 }
 
 .form {
-  border:$form-border solid 1px;
-  height:1167px;
+  border: $form-border solid 1px;
+  height: 1167px;
   margin-top: 72px;
-  margin-bottom:79px;
-   h3 {
-     display:inline;
-   }
+  margin-bottom: 79px;
+  h3 {
+    display: inline;
+  }
 }
-.form form  {
-  margin-left:82px;
+
+.form form {
+  margin-left: 82px;
   //margin-right:60px;
 }
 
@@ -115,173 +181,154 @@ main {
 }
 
 [type=radio]:checked + label {
-  color:$primary-text;
+  color: $primary-text;
   i {
-    color:$dark-green;
+    color: $dark-green;
   }
+}
+.accountType label {
+  margin-right:33px;
 }
 
 .instruction {
-  color:$secondary-text;
+  color: $secondary-text;
   margin-bottom: 30px;
-  margin-top:65px;
-    i {
-    font-size:30px;
-      position: relative;
-      top:3px;
-  }
-  span {
-    font-size:18px;
-    position: relative;
-    left:-21px;
-  }
+  margin-top: 65px;
   h3 {
     color: $primary-text;
     font-size: 18px;
     font-weight: 500;
+    display: inline-block;
+  }
+  h4 {
+    border: $secondary-text solid 2px;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 18px;
   }
 }
- input {
+
+input {
   height: 53px;
   line-height: 53px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding:0 0 0 16px;
-   border: $secondary-text solid 1px;
-   color:$primary-text;
-   font-size:14px;
-   font-family: 'Roboto', sans-serif;
+  padding: 0 0 0 16px;
+  border: $secondary-text solid 1px;
+  color: $primary-text;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  background-color: $input-background;
 
 }
 
 .form input:focus {
-  border:$dark-green solid 1px;
-  outline:none;
+  border: $dark-green solid 1px;
+  outline: none;
 }
 
 .accountOwner input {
-  width:210px;
+  width: 210px;
 }
 
 .accountOwner select {
   @extend input;
-  width:226px;
-  padding-right:10px;
+  width: 226px;
+  padding-right: 10px;
 
   option {
-    color:$primary-text;
+    color: $primary-text;
   }
 }
 
-.bank  {
-  margin-top:12px;
+.bank {
+  margin-top: 12px;
 }
+
 .bankAccount input {
-  width:294px ;
+  width: 294px;
 }
 
 .bankAccount select {
   @extend input;
-  width:310px;
+  width: 310px;
 }
 
-textarea  {
+textarea {
   width: 456px;
   height: 104px;
   font-family: 'Roboto', sans-serif;
-  font-size:14px;
-  padding-left:16px;
+  font-size: 14px;
+  padding-left: 16px;
   padding-top: 18px;
 }
 
-textarea:focus  {
-  border:$dark-green solid 1px;
-  outline:none;
-}
-
-.button {
-  width:136px;
-  height: 50px;
-  color: white;
-  background-color: $dark-green;
-  padding:0;
-  float:right;
-  margin-right:87px;
-  margin-top:60px;
+textarea:focus {
+  border: $dark-green solid 1px;
   outline: none;
 }
 
+.button {
+  width: 136px;
+  height: 50px;
+  color: white;
+  background-color: $dark-green;
+  padding: 0;
+  float: right;
+  margin-right: 87px;
+  margin-top: 60px;
+  outline: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer  {
-  height:60px;
-  border-top:$border-gray solid 1px;
-  font-size:11px;
-  color:$secondary-text;
+footer {
+  height: 60px;
+  border-top: $border-gray solid 1px;
+  font-size: 11px;
+  color: $secondary-text;
   .container {
     line-height: 60px;
   }
 }
+
 .language {
-  width:87px;
+  width: 87px;
   height: 32px;
-  border:$lang-box solid 1px;
+  border: $lang-box solid 1px;
   border-radius: 5%;
-  float:left;
-  margin-top:14px;
-  margin-right:27px;
+  float: left;
+  margin-top: 14px;
+  margin-right: 27px;
   line-height: 32px;
   cursor: pointer;
   span {
     margin-left: 10px;
   }
   i {
-    font-size:16px;
-    margin-left:10px;
+    font-size: 16px;
+    margin-left: 10px;
   }
 }
+
 .language:hover {
   color: $primary-text;
 }
 
-.copyright  {
-  float:right;
+.copyright {
+  float: right;
   vertical-align: middle;
 }
+
 nav * {
   display: inline;
   margin-right: 22px;
   cursor: pointer;
 }
 
-nav li:hover  {
-  color:$dark-green;
+nav li:hover {
+  color: $dark-green;
 }
