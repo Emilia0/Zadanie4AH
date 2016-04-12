@@ -28,11 +28,22 @@ header {
     margin-right: 5px;
   }
 }
+.planeCircle {
+  display:inline;
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  background-color: $border-gray;
+  text-align: center;
+  line-height: 23px;
+}
 
 .fa-plane {
   color: $dark-green;
   margin-right: 5px;
 }
+
+
 
 .container {
   width: 1000px;
@@ -283,6 +294,12 @@ textarea:focus {
   margin-right: 87px;
   margin-top: 60px;
   outline: none;
+  border:none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: $light-green;
 }
 
 footer {
