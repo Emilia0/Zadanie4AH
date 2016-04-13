@@ -159,19 +159,97 @@ main {
     line-height: 1.4;
     padding: 0;
   }
-  a {
-    color: $dark-green;
-    font-size: 16px;
-    text-decoration: underline;
-  }
+
 }
 
 .closeX {
   font-family: 'Orbitron', sans-serif;
   font-size:15px;
-
+  margin-left: 300px;
+  line-height: 10px;
 
 }
+.policy {
+  color: $dark-green;
+  font-size: 16px;
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.policy:hover {
+  color: $dark-green;
+  //text-decoration: underline;
+}
+
+
+.policy > i {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px ;
+  line-height: 17px;
+  color: $privacy-policy-text;
+  background: $background-basic;
+  background-clip: padding-box;
+  box-shadow: 0px 0px 10px 2px $header-footer;
+  border: 1px solid $border-gray;
+  border-radius: 3px;
+  position: absolute;
+  width:316px ;
+  height:115px;
+
+  left: 50%;
+  margin-left: -175px;
+  top: 30px;
+  padding:13px 15px 29px 26px;
+  bottom: 100%;
+  margin-bottom: 15px;
+
+  //display:none;
+
+  //opacity:0;
+  //-webkit-transition: opacity 0.5s linear;
+  //-moz-transition: opacity 0.5s linear;
+  //-ms-transition: opacity 0.5s linear;
+  //-o-transition: opacity 0.5s linear;
+  //transition: opacity 0.5s linear;
+}
+
+.policy > i:before, .policy i:after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.policy > i:before {
+  /*border-top: 10px solid #111;*/
+  border-bottom: 10px solid $border-gray;
+  margin-bottom: 0px;
+}
+
+.policy > i:after {
+  border-bottom: 10px solid $background-basic;
+  margin-bottom: -2px;
+  z-index: 1;
+}
+
+.policy:hover > i {
+  opacity: 1;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
 
 .form {
   border: $border-gray solid 1px;
@@ -268,6 +346,9 @@ input {
 .bank {
   margin-top: 12px;
 }
+.bankAccount {
+  position: relative;
+}
 
 .bankAccount input {
   width: 294px;
@@ -290,6 +371,27 @@ input {
   color:$dark-green;
   text-decoration: none;
 }
+
+//.visible {
+//  opacity: 1;
+//}
+//
+//.infoHover {
+//  //visibility:hidden;
+//  position: absolute;
+//  top:157px;
+//  //left:330px;
+//  left:100px;
+//  width:35px;
+//  height: 35px;
+//  border-radius: 100%;
+//  background-color: deeppink;
+//}
+//
+//.blue {
+//  background-color: blue;
+//}
+
 
 .info {
   width: 23px;
@@ -328,6 +430,7 @@ input {
   padding:27px 33px 35px 26px;
   bottom: 100%;
   margin-bottom: 15px;
+  display:none;
 
   opacity:0;
   -webkit-transition: opacity 0.5s linear;
@@ -360,8 +463,8 @@ input {
 }
 
 .info:hover > i {
-  /*visibility: visible;*/
   opacity: 1;
+  display: block;
 }
 
 textarea {
