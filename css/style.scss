@@ -278,6 +278,19 @@ input {
   width: 310px;
 }
 
+.boxTitle {
+  color: $primary-text;
+  font-size:14px;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+.green, .green:visited {
+  color:$dark-green;
+  text-decoration: none;
+}
+
 .info {
   width: 23px;
   height: 23px;
@@ -296,22 +309,23 @@ input {
 }
 
 .info > i {
-  text-align: center;
-  /*line-height: 150%;*/
-  color: black;
-  /*text-shadow: white 0 1px;*/
-  background: white;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px ;
+  font-weight: 300;
+  line-height: 17px;
+  color: $primary-text;
+  background: $background-basic;
   background-clip: padding-box;
-  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
-  border: 1px solid pink;
-  /*border: 5px solid rgba(0, 0, 0, 0.5);*/
-  border-radius: 2px;
+  box-shadow: 0px 0px 10px 2px $header-footer;
+  border: 1px solid $border-gray;
+  border-radius: 3px;
   position: absolute;
-  width:341px ;
-  height:153px;
+  width:282px ;
+  height:91px;
   left: 50%;
-  margin-left: -125px;
-  padding: 10px 0;
+  margin-left: -170px;
+  padding:27px 33px 35px 26px;
   bottom: 100%;
   margin-bottom: 15px;
 
@@ -335,12 +349,12 @@ input {
 
 .info > i:before {
   /*border-top: 10px solid #111;*/
-  border-top: 10px solid pink;
+  border-top: 10px solid $border-gray;
   margin-top: 0px;
 }
 
 .info > i:after {
-  border-top: 10px solid white;
+  border-top: 10px solid $background-basic;
   margin-top: -2px;
   z-index: 1;
 }
