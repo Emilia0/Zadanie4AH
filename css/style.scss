@@ -8,7 +8,7 @@ body {
 header {
   height: 60px;
   border-bottom: solid 1px;
-  border-bottom-color: $border-gray;
+  border-bottom-color: $header-footer;
   .container {
     line-height: 60px;
   }
@@ -33,7 +33,7 @@ header {
   width: 23px;
   height: 23px;
   border-radius: 100%;
-  background-color: $border-gray;
+  background-color: $header-footer;
   text-align: center;
   line-height: 23px;
   margin-right:5px;
@@ -61,7 +61,7 @@ header {
   background-color: transparent;
   padding: 0;
   line-height: 60px;
-  color: $border-gray;
+  color: $light-text;
   h4 {
     border: $border-gray solid 2px;
     border-radius: 100%;
@@ -166,8 +166,15 @@ main {
   }
 }
 
+.closeX {
+  font-family: 'Orbitron', sans-serif;
+  font-size:15px;
+
+
+}
+
 .form {
-  border: $form-border solid 1px;
+  border: $border-gray solid 1px;
   height: 1167px;
   margin-top: 72px;
   margin-bottom: 79px;
@@ -186,9 +193,9 @@ main {
 }
 
 [type=radio] + label {
-  color: $secondary-text;
+  color: $form-text;
   i {
-    color: $secondary-text;
+    color: $form-text;
   }
 }
 
@@ -203,7 +210,7 @@ main {
 }
 
 .instruction {
-  color: $secondary-text;
+  color: $form-text;
   margin-bottom: 30px;
   margin-top: 65px;
   h3 {
@@ -213,7 +220,7 @@ main {
     display: inline-block;
   }
   h4 {
-    border: $secondary-text solid 2px;
+    border: $form-text solid 2px;
     border-radius: 100%;
     width: 28px;
     height: 28px;
@@ -231,7 +238,7 @@ input {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0 0 0 16px;
-  border: $secondary-text solid 1px;
+  border: $form-text solid 1px;
   color: $primary-text;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
@@ -276,14 +283,71 @@ input {
   height: 23px;
   text-align: center;
   line-height: 23px;
-  border: $secondary-text solid 2px;
-  color: $secondary-text;
+  border: $form-text solid 2px;
+  color: $form-text;
   border-radius: 100%;
   font-family: 'Merriweather', serif;
   font-size:15px;
   font-weight:700;
   display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
 
+.info > i {
+  text-align: center;
+  /*line-height: 150%;*/
+  color: black;
+  /*text-shadow: white 0 1px;*/
+  background: white;
+  background-clip: padding-box;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid pink;
+  /*border: 5px solid rgba(0, 0, 0, 0.5);*/
+  border-radius: 2px;
+  position: absolute;
+  width:341px ;
+  height:153px;
+  left: 50%;
+  margin-left: -125px;
+  padding: 10px 0;
+  bottom: 100%;
+  margin-bottom: 15px;
+
+  opacity:0;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -ms-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.info > i:before, .info i:after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.info > i:before {
+  /*border-top: 10px solid #111;*/
+  border-top: 10px solid pink;
+  margin-top: 0px;
+}
+
+.info > i:after {
+  border-top: 10px solid white;
+  margin-top: -2px;
+  z-index: 1;
+}
+
+.info:hover > i {
+  /*visibility: visible;*/
+  opacity: 1;
 }
 
 textarea {
@@ -320,9 +384,9 @@ textarea:focus {
 
 footer {
   height: 60px;
-  border-top: $border-gray solid 1px;
+  border-top: $header-footer solid 1px;
   font-size: 11px;
-  color: $secondary-text;
+  color: $light-text;
   .container {
     line-height: 60px;
   }
@@ -331,7 +395,7 @@ footer {
 .language {
   width: 87px;
   height: 32px;
-  border: $lang-box solid 1px;
+  border: $header-footer solid 1px;
   border-radius: 5%;
   float: left;
   margin-top: 14px;
