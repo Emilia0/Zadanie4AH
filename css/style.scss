@@ -182,12 +182,20 @@ main {
   //text-decoration: underline;
 }
 
+.visible {
+  display: block;
+}
+
+.unvisible {
+  display:none;
+
+}
 
 .policy > i {
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size:12px ;
-  line-height: 17px;
+  line-height: 16px;
   color: $privacy-policy-text;
   background: $background-basic;
   background-clip: padding-box;
@@ -195,24 +203,19 @@ main {
   border: 1px solid $border-gray;
   border-radius: 3px;
   position: absolute;
-  width:316px ;
-  height:115px;
+  width:296px ;
+  height:125px;
 
   left: 50%;
   margin-left: -175px;
   top: 30px;
-  padding:13px 15px 29px 26px;
+  padding:13px 35px 29px 26px;
   bottom: 100%;
   margin-bottom: 15px;
 
-  //display:none;
 
-  //opacity:0;
-  //-webkit-transition: opacity 0.5s linear;
-  //-moz-transition: opacity 0.5s linear;
-  //-ms-transition: opacity 0.5s linear;
-  //-o-transition: opacity 0.5s linear;
-  //transition: opacity 0.5s linear;
+
+
 }
 
 .policy > i:before, .policy i:after {
@@ -237,19 +240,10 @@ main {
   z-index: 1;
 }
 
-.policy:hover > i {
-  opacity: 1;
-  display: block;
-}
-
-
-
-
-
-
-
-
-
+//.policy:hover > i {
+//  opacity: 1;
+//  display: block;
+//}
 
 .form {
   border: $border-gray solid 1px;
@@ -285,6 +279,7 @@ main {
 }
 .accountType label {
   margin-right:33px;
+  cursor: pointer;
 }
 
 .instruction {
@@ -321,12 +316,34 @@ input {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   background-color: $input-background;
+}
+.firstName, .lastName {
+  margin-bottom:33px;
+}
 
+.error {
+  font-size:12px;
+  color: $warning-red;
+  position: absolute;
+  top:60px;
+  left:1px;
+  visibility: hidden;
+}
+
+.red {
+  border-color:$warning-red;
+}
+
+.lNameError {
+  left: 253px;
 }
 
 .form input:focus {
   border: $dark-green solid 1px;
   outline: none;
+}
+.accountOwner {
+  position: relative;
 }
 
 .accountOwner input {
@@ -432,12 +449,12 @@ input {
   margin-bottom: 15px;
   display:none;
 
-  opacity:0;
-  -webkit-transition: opacity 0.5s linear;
-  -moz-transition: opacity 0.5s linear;
-  -ms-transition: opacity 0.5s linear;
-  -o-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  //opacity:0;
+  //-webkit-transition: opacity 0.5s linear;
+  //-moz-transition: opacity 0.5s linear;
+  //-ms-transition: opacity 0.5s linear;
+  //-o-transition: opacity 0.5s linear;
+  //transition: opacity 0.5s linear;
 }
 
 .info > i:before, .info i:after {
@@ -451,7 +468,6 @@ input {
 }
 
 .info > i:before {
-  /*border-top: 10px solid #111;*/
   border-top: 10px solid $border-gray;
   margin-top: 0px;
 }
@@ -462,9 +478,9 @@ input {
   z-index: 1;
 }
 
-.info:hover > i {
+.info:hover > i, .info:hover {
   opacity: 1;
-  display: block;
+  display: inline-block;
 }
 
 textarea {
