@@ -91,10 +91,29 @@
 
   .policy > i {
     margin-left: -260px;
+    margin-top:-210px;
   }
 
   .policy > i:before, .policy i:after {
-    left: 65%
+    left: 65%;
+    bottom: 0%;
+    top:100%;
+  }
+
+  .policy > i:before {
+    border-bottom:none;
+    margin-bottom: 0px;
+    border-top: 10px solid $border-gray;
+    margin-top: 0px;
+  }
+
+  .policy > i:after {
+
+    border-top: 10px solid $background-basic;
+    margin-top: -2px;
+    z-index: 1;
+    border-bottom:none;
+    margin-bottom: 0px;
   }
 
   .form {
