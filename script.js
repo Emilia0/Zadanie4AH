@@ -5,12 +5,12 @@ $(document).ready(function () {
     });
 
     $('.policyClick').click(function () {
-        $('.policyBox').removeClass('unvisible');
+        $('.policyBox').removeClass('invisible');
         $('.policyBox').addClass('visible');
     });
 
     $('.closeX').click(function () {
-        $('.policyBox').toggleClass('visible unvisible');
+        $('.policyBox').toggleClass('visible invisible');
     });
 
     $('#submitButton').click(function (event) {
