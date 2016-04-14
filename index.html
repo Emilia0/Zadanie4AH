@@ -3,10 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
     <meta name="author" content="Emilia Kamrowska">
-    <meta name="keywords" content="">
-    <title></title>
+    <meta name="keywords" content="AirHelp">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -29,9 +27,10 @@
         </div>
     </div>
 </header>
+
 <div class="container">
     <section class="payoutSelection desktop">
-        <h4> <i class="fa fa-check" ></i></h4>
+        <h4><i class="fa fa-check"></i></h4>
         <h3>Choose payout method</h3>
         <div class="arrowRight arrowBorder" id="firstArrowB"></div>
         <div class="arrowRight arrowFill" id="firstArrowF"></div>
@@ -61,7 +60,7 @@
         <p>In order to send you your compensation, we need your bank account information. Rest assured,
             your banking details are safe and secure and we never share your information with third parties.</p>
 
-        <a class="policy"><span class="policyClick">View privacy policy.</span><i class="policyBox unvisible">
+        <a class="policy"><span class="policyClick">View privacy policy.</span><i class="policyBox invisible">
             <span class="closeX"> X</span><br>
             <span class="boxTitle">Privacy policy</span><br><br>
             The Client provides AirHelp with personal data under
@@ -69,21 +68,22 @@
             protection laws that may be applicable, with the explicit
             permission to process the personal data given and for
             the use thereof in the context of the Agreement.
-            </i></a>
+        </i></a>
     </section>
 
     <section class="form">
-        <form action="">
-
+        <form>
             <div class="instruction">
                 <h4>1</h4>
                 <h3>Account type</h3></div>
 
             <div class="accountType">
                 <input type="radio" id="personalAccount" checked name="accountType" value="" class="accountChoice">
-                <label class="icon-" for="personalAccount"><i class="fa fa-dot-circle-o choice"> </i> Personal account</label>
+                <label class="icon-" for="personalAccount"><i class="fa fa-dot-circle-o choice"> </i> Personal
+                    account</label>
                 <input type="radio" id="businessAccount" name="accountType" value="" class="accountChoice">
-                <label class="icon-" for="businessAccount"> <i class="fa fa-circle-o choice"> </i> Business account</label>
+                <label class="icon-" for="businessAccount"> <i class="fa fa-circle-o choice"> </i> Business
+                    account</label>
             </div>
 
             <div class="instruction">
@@ -113,31 +113,30 @@
 
             <div class="bankAccount">
                 <select name="bankCountry" id="bankCountry">
-                    <option value="" disabled selected hidden >Country of your bank</option>
+                    <option value="" disabled selected hidden>Country of your bank</option>
                     <option value="USA">USA</option>
                     <option value="PL">Polska</option>
                 </select>
                 <input type="text" placeholder="BIC / SWIFT code">
                 <input type="text" placeholder="IBAN (bank account number)">
 
-
-
-                <h4 class="info">i<i class="IBAN unvisible">
+                <h4 class="info">i<i class="IBAN">
                     <span class="boxTitle">IBAN</span><br><br>
-                    <span class="bold">IBAN</span> stands for <span class="bold">International Bank Account Number</span>,
+                    <span class="bold">IBAN</span> stands for <span
+                        class="bold">International Bank Account Number</span>,
                     which is required on EU transfers, and used of many
                     other countries worldwide.The IBAN consists of up to
-                    34 alphanumeric characters <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number" class="green">More info</a>
+                    34 alphanumeric characters <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number"
+                                                  class="green">More info</a>
                 </i></h4>
 
-                <textarea name="" id=""  placeholder="Additional information (optional)"></textarea>
+                <textarea name="" id="" placeholder="Additional information (optional)"></textarea>
             </div>
 
             <input type="submit" value="Continue" class="button" id="submitButton">
 
         </form>
     </section>
-
 </main>
 <footer>
     <div class="container footer">
@@ -153,7 +152,6 @@
             </ul>
         </nav>
     </div>
-
 </footer>
 <script type="text/javascript" src="lib/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="script.js"></script>

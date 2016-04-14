@@ -13,10 +13,6 @@ $(document).ready(function () {
         $('.policyBox').toggleClass('visible unvisible');
     });
 
-    $('.info').hover(function () {
-        $('.IBAN').toggleClass('visible unvisible');
-    });
-
     $('#submitButton').click(function (event) {
         event.preventDefault();
         if (($('.firstName').val()) == '') {

@@ -1,8 +1,9 @@
 @import "_variables.scss";
 
 .mobile {
-  display:none;
+  display: none;
 }
+
 body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -151,7 +152,6 @@ main {
   h1 {
     font-size: 25px;
     font-weight: 500;
-
   }
   p {
     margin-top: 26px;
@@ -164,8 +164,8 @@ main {
     line-height: 1.4;
     padding: 0;
   }
-
 }
+
 .policyClick {
   cursor: pointer;
 }
@@ -192,22 +192,20 @@ main {
 
 .visible {
   opacity: 1;
-  display:inline-block;
+  display: inline-block;
   -webkit-transition: opacity 0.5s linear;
   -moz-transition: opacity 0.5s linear;
   -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
-
 }
 
-.unvisible {
+.invisible {
   opacity: 0;
   -webkit-transition: opacity 0.5s linear;
   -moz-transition: opacity 0.5s linear;
   -o-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
 }
-
 
 .policy > i {
   text-align: left;
@@ -223,14 +221,12 @@ main {
   position: absolute;
   width: 296px;
   height: 125px;
-
   left: 50%;
   margin-left: -175px;
   top: 30px;
   padding: 13px 35px 29px 26px;
   bottom: 100%;
   margin-bottom: 15px;
-
 }
 
 .policy > i:before, .policy i:after {
@@ -244,7 +240,6 @@ main {
 }
 
 .policy > i:before {
-  /*border-top: 10px solid #111;*/
   border-bottom: 10px solid $border-gray;
   margin-bottom: 0px;
 }
@@ -254,11 +249,6 @@ main {
   margin-bottom: -2px;
   z-index: 1;
 }
-
-//.policy:hover > i {
-//  opacity: 1;
-//  display: block;
-//}
 
 .form {
   border: $border-gray solid 1px;
@@ -272,7 +262,6 @@ main {
 
 .form form {
   margin-left: 82px;
-  //margin-right:60px;
 }
 
 [type=radio] {
@@ -298,7 +287,7 @@ main {
   font-weight: 500;
   line-height: 19px;
   i {
-    font-size:19px;
+    font-size: 19px;
   }
 }
 
@@ -381,7 +370,6 @@ input {
   @extend input;
   width: 226px;
   padding-right: 10px;
-
   option {
     color: $primary-text;
   }
@@ -404,8 +392,6 @@ input {
   width: 310px;
 }
 
-
-
 .info {
   width: 23px;
   height: 23px;
@@ -421,10 +407,9 @@ input {
   text-decoration: none;
   cursor: pointer;
   position: relative;
-
 }
 
-.info > i {
+.info > .IBAN {
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -445,6 +430,7 @@ input {
   bottom: 100%;
   margin-bottom: 15px;
   cursor: initial;
+  display: none;
 }
 
 .info > i:before, .info i:after {
@@ -468,14 +454,9 @@ input {
   z-index: 1;
 }
 
-//.info:hover > i, .info:hover {
-//  display: inline-block;
-//  opacity: 1;
-//  -webkit-transition: opacity 0.5s linear;
-//  -moz-transition: opacity 0.5s linear;
-//  -o-transition: opacity 0.5s linear;
-//  transition: opacity 0.5s linear;
-//}
+.info:hover > i, .info:hover {
+  display: inline-block;
+}
 
 .boxTitle {
   color: $primary-text;
@@ -511,7 +492,6 @@ textarea:focus {
   height: 50px;
   color: white;
   font-size: 15px;
-  //background-color: $dark-green;
   background-color: $light-green;
   padding: 0;
   float: right;
@@ -524,12 +504,11 @@ textarea:focus {
 }
 
 .button:hover {
-  //background-color: $light-green;
   background-color: $dark-green;
 }
 
 .button:focus {
-  outline:none;
+  outline: none;
   border: none;
 }
 
