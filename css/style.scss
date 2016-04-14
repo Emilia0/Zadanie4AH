@@ -1,5 +1,8 @@
 @import "_variables.scss";
 
+.mobile {
+  display:none;
+}
 body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -28,23 +31,21 @@ header {
     margin-right: 5px;
   }
 }
+
 .planeCircle {
-  display:inline-block;
+  display: inline-block;
   width: 23px;
   height: 23px;
   border-radius: 100%;
   background-color: $header-footer;
   text-align: center;
   line-height: 23px;
-  margin-right:5px;
-
+  margin-right: 5px;
 }
 
 .fa-plane {
   color: $dark-green;
 }
-
-
 
 .container {
   width: 1000px;
@@ -71,27 +72,26 @@ header {
     font-size: 12px;
     display: inline-block;
     line-height: 20px;
-    margin-left:66px;
+    margin-left: 66px;
   }
   h3 {
     display: inline-block;
     font-size: 13px;
     font-weight: 500;
-    margin-left:13px;
-    margin-right:88px;
+    margin-left: 13px;
+    margin-right: 88px;
   }
   div {
     display: inline-block;
   }
   h4[class="active"] {
-    color:$dark-green;
-    border-color:$dark-green;
+    color: $dark-green;
+    border-color: $dark-green;
   }
   h3[class="active"] {
-    color:$primary-text;
+    color: $primary-text;
   }
 }
-
 
 .arrowRight {
   width: 0;
@@ -99,28 +99,33 @@ header {
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   position: absolute;
-  border-left: 17px solid ;
+  border-left: 17px solid;
 }
 
 .arrowBorder {
   border-left-color: $border-gray;
-  z-index:50;
+  z-index: 50;
 }
+
 .arrowFill {
   border-left-color: white;
-  z-index:100;
+  z-index: 100;
 }
+
 #firstArrowB {
-  left:326px;
+  left: 326px;
 }
+
 #firstArrowF {
-  left:325px;
+  left: 325px;
 }
+
 #secondArrowB {
   left: 659px;
 }
+
 #secondArrowF {
-  left:658px;
+  left: 658px;
 }
 
 .payoutMethod {
@@ -164,11 +169,12 @@ main {
 
 .closeX {
   font-family: 'Orbitron', sans-serif;
-  font-size:15px;
+  font-size: 15px;
   margin-left: 300px;
   line-height: 10px;
 
 }
+
 .policy {
   color: $dark-green;
   font-size: 16px;
@@ -177,9 +183,9 @@ main {
   cursor: pointer;
   display: inline-block;
 }
+
 .policy:hover {
   color: $dark-green;
-  //text-decoration: underline;
 }
 
 .visible {
@@ -187,14 +193,14 @@ main {
 }
 
 .unvisible {
-  display:none;
+  display: none;
 
 }
 
 .policy > i {
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-size:12px ;
+  font-size: 12px;
   line-height: 16px;
   color: $privacy-policy-text;
   background: $background-basic;
@@ -203,18 +209,15 @@ main {
   border: 1px solid $border-gray;
   border-radius: 3px;
   position: absolute;
-  width:296px ;
-  height:125px;
+  width: 296px;
+  height: 125px;
 
   left: 50%;
   margin-left: -175px;
   top: 30px;
-  padding:13px 35px 29px 26px;
+  padding: 13px 35px 29px 26px;
   bottom: 100%;
   margin-bottom: 15px;
-
-
-
 
 }
 
@@ -277,8 +280,18 @@ main {
     color: $dark-green;
   }
 }
+
+.accountType {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  i {
+    font-size:19px;
+  }
+}
+
 .accountType label {
-  margin-right:33px;
+  margin-right: 33px;
   cursor: pointer;
 }
 
@@ -317,21 +330,22 @@ input {
   font-family: 'Roboto', sans-serif;
   background-color: $input-background;
 }
+
 .firstName, .lastName {
-  margin-bottom:33px;
+  margin-bottom: 33px;
 }
 
 .error {
-  font-size:12px;
+  font-size: 12px;
   color: $warning-red;
   position: absolute;
-  top:60px;
-  left:1px;
+  top: 60px;
+  left: 1px;
   visibility: hidden;
 }
 
 .red {
-  border-color:$warning-red;
+  border-color: $warning-red;
 }
 
 .lNameError {
@@ -342,6 +356,7 @@ input {
   border: $dark-green solid 1px;
   outline: none;
 }
+
 .accountOwner {
   position: relative;
 }
@@ -363,6 +378,7 @@ input {
 .bank {
   margin-top: 12px;
 }
+
 .bankAccount {
   position: relative;
 }
@@ -376,18 +392,7 @@ input {
   width: 310px;
 }
 
-.boxTitle {
-  color: $primary-text;
-  font-size:14px;
-  font-weight: bold;
-}
-.bold {
-  font-weight: bold;
-}
-.green, .green:visited {
-  color:$dark-green;
-  text-decoration: none;
-}
+
 
 //.visible {
 //  opacity: 1;
@@ -409,7 +414,6 @@ input {
 //  background-color: blue;
 //}
 
-
 .info {
   width: 23px;
   height: 23px;
@@ -419,8 +423,8 @@ input {
   color: $form-text;
   border-radius: 100%;
   font-family: 'Merriweather', serif;
-  font-size:15px;
-  font-weight:700;
+  font-size: 15px;
+  font-weight: 700;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -430,7 +434,7 @@ input {
 .info > i {
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  font-size:12px ;
+  font-size: 12px;
   font-weight: 300;
   line-height: 17px;
   color: $primary-text;
@@ -440,14 +444,14 @@ input {
   border: 1px solid $border-gray;
   border-radius: 3px;
   position: absolute;
-  width:282px ;
-  height:91px;
+  width: 282px;
+  height: 91px;
   left: 50%;
   margin-left: -170px;
-  padding:27px 33px 35px 26px;
+  padding: 27px 33px 35px 26px;
   bottom: 100%;
   margin-bottom: 15px;
-  display:none;
+  display: none;
 
   //opacity:0;
   //-webkit-transition: opacity 0.5s linear;
@@ -482,6 +486,20 @@ input {
   opacity: 1;
   display: inline-block;
 }
+.boxTitle {
+  color: $primary-text;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green, .green:visited {
+  color: $dark-green;
+  text-decoration: none;
+}
 
 textarea {
   width: 456px;
@@ -501,18 +519,27 @@ textarea:focus {
   width: 136px;
   height: 50px;
   color: white;
-  background-color: $dark-green;
+  font-size: 15px;
+  //background-color: $dark-green;
+  background-color: $light-green;
   padding: 0;
   float: right;
   margin-right: 87px;
   margin-top: 60px;
   outline: none;
-  border:none;
+  border: none;
   border-radius: 2px;
   cursor: pointer;
 }
+
 .button:hover {
-  background-color: $light-green;
+  //background-color: $light-green;
+  background-color: $dark-green;
+}
+
+.button:focus {
+  outline:none;
+  border: none;
 }
 
 footer {
@@ -562,3 +589,5 @@ nav * {
 nav li:hover {
   color: $dark-green;
 }
+
+@import "_mobile.scss";

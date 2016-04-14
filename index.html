@@ -18,8 +18,11 @@
 <body>
 <header>
     <div class="container">
+        <div class="mobile menuIcon">
+            <div class="line"></div>
+        </div>
         <img class="logo" src="images/logo.svg" alt="AirHelp logo">
-        <div class="userName">
+        <div class="userName desktop">
             <h4 class="planeCircle"><i class="fa fa-plane"></i></h4>
             <span>Joe Smith</span>
             <i class="fa fa-angle-down"></i>
@@ -27,10 +30,7 @@
     </div>
 </header>
 <div class="container">
-
-    <section class="payoutSelection">
-
-
+    <section class="payoutSelection desktop">
         <h4> <i class="fa fa-check" ></i></h4>
         <h3>Choose payout method</h3>
         <div class="arrowRight arrowBorder" id="firstArrowB"></div>
@@ -41,7 +41,13 @@
         <div class="arrowRight arrowFill" id="secondArrowF"></div>
         <h4>3</h4>
         <h3>Review and confirm</h3>
+    </section>
 
+    <section class="payoutSelection2 mobile">
+        <div class="step2">Step 2/3</div>
+        <div class="progressBar bar1"></div>
+        <div class="progressBar bar2"></div>
+        <div class="progressBar bar3"></div>
     </section>
 
     <section class="payoutMethod">
