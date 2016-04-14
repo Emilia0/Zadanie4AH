@@ -166,13 +166,16 @@ main {
   }
 
 }
+.policyClick {
+  cursor: pointer;
+}
 
 .closeX {
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
   margin-left: 300px;
   line-height: 10px;
-
+  cursor: pointer;
 }
 
 .policy {
@@ -180,7 +183,6 @@ main {
   font-size: 16px;
   text-decoration: underline;
   position: relative;
-  cursor: pointer;
   display: inline-block;
 }
 
@@ -189,13 +191,23 @@ main {
 }
 
 .visible {
-  display: block;
+  opacity: 1;
+  display:inline-block;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+
 }
 
 .unvisible {
-  display: none;
-
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
 }
+
 
 .policy > i {
   text-align: left;
@@ -394,26 +406,6 @@ input {
 
 
 
-//.visible {
-//  opacity: 1;
-//}
-//
-//.infoHover {
-//  //visibility:hidden;
-//  position: absolute;
-//  top:157px;
-//  //left:330px;
-//  left:100px;
-//  width:35px;
-//  height: 35px;
-//  border-radius: 100%;
-//  background-color: deeppink;
-//}
-//
-//.blue {
-//  background-color: blue;
-//}
-
 .info {
   width: 23px;
   height: 23px;
@@ -429,6 +421,7 @@ input {
   text-decoration: none;
   cursor: pointer;
   position: relative;
+
 }
 
 .info > i {
@@ -451,14 +444,7 @@ input {
   padding: 27px 33px 35px 26px;
   bottom: 100%;
   margin-bottom: 15px;
-  display: none;
-
-  //opacity:0;
-  //-webkit-transition: opacity 0.5s linear;
-  //-moz-transition: opacity 0.5s linear;
-  //-ms-transition: opacity 0.5s linear;
-  //-o-transition: opacity 0.5s linear;
-  //transition: opacity 0.5s linear;
+  cursor: initial;
 }
 
 .info > i:before, .info i:after {
@@ -482,10 +468,15 @@ input {
   z-index: 1;
 }
 
-.info:hover > i, .info:hover {
-  opacity: 1;
-  display: inline-block;
-}
+//.info:hover > i, .info:hover {
+//  display: inline-block;
+//  opacity: 1;
+//  -webkit-transition: opacity 0.5s linear;
+//  -moz-transition: opacity 0.5s linear;
+//  -o-transition: opacity 0.5s linear;
+//  transition: opacity 0.5s linear;
+//}
+
 .boxTitle {
   color: $primary-text;
   font-size: 14px;
